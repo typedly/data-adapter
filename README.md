@@ -102,7 +102,7 @@ import { DataAdapterConstructor } from '@typedly/data-adapter';
 import { DataAdapterShape } from '@typedly/data-adapter';
 ```
 
-[Source](https://github.com/typedly/data-adapter/blob/main/src/inference/lib/data-adapter.shape.ts)
+[Source](https://github.com/typedly/data-adapter/blob/main/src/lib/data-adapter.shape.ts)
 
 ## Contributing
 
