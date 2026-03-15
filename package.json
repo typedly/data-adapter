@@ -9,7 +9,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
-    "@typedly/configurable-data": "^2.0.0",
+    "@typedly/configurable-data": "^3.0.0",
     "@typedly/data": "^6.0.0",
     "@typedly/data-traits": "^1.1.0"
   },
