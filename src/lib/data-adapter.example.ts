@@ -26,8 +26,8 @@ export class ExampleDataAdapter<
   getValue(): AsyncReturn<R, T> {
     return this.value as AsyncReturn<R, T>;
   }
-  lock(): AsyncReturn<R, this> {
-    return this as AsyncReturn<R, this>;
+  lock(): this {
+    return this;
   }
   setValue(value: T): AsyncReturn<R, this> {
     this.value = value;

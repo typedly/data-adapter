@@ -1,6 +1,6 @@
 {
   "name": "@typedly/data-adapter",
-  "version": "1.0.0-beta",
+  "version": "2.0.0",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "A TypeScript type definitions for data adapter.",
   "license": "MIT",
@@ -9,9 +9,9 @@
     "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
-    "@typedly/configurable-data": "^1.0.0-beta.1",
-    "@typedly/data": "^5.0.0-beta.1",
-    "@typedly/data-traits": "^1.0.0"
+    "@typedly/configurable-data": "^2.0.0",
+    "@typedly/data": "^6.0.0",
+    "@typedly/data-traits": "^1.1.0"
   },
   "scripts": {
     "prepublishOnly": "npm install rimraf && npm run pkg && npm run clean",
