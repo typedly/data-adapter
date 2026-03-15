@@ -6,8 +6,9 @@ export class ExampleDataAdapter<
   T,
   C extends DataSettings<R> | undefined = undefined,
   R extends boolean = C extends DataSettings<infer U> ? U extends boolean ? U : false : false
-> implements DataAdapterShape<DataConfig<C, R>, T, R> {
+> implements DataAdapterShape<C, T, R> {
   public configuration: DataConfig<C, R>;
+
   constructor(
     public value: T,
     public settings?: C,
