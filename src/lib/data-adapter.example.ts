@@ -1,11 +1,11 @@
-import { DataSettings } from "@typedly/data";
+import { DataSettings, InferAsync } from "@typedly/data";
 import { AsyncReturn, DataConfig } from "@typedly/data";
 import { DataAdapterShape } from "./data-adapter.shape";
 
 export class ExampleDataAdapter<
   T,
   C extends DataSettings<R> | undefined = undefined,
-  R extends boolean = C extends DataSettings<infer U> ? U extends boolean ? U : false : false
+  R extends boolean = InferAsync<C>
 > implements DataAdapterShape<C, T, R> {
   public configuration: DataConfig<C, R>;
 
