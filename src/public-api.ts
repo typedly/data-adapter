@@ -3,6 +3,8 @@
  */
 
 export type {
+  ConfigurableDataAdapterConstructor,
+  ConfigurableDataAdapterShape,
   DataAdapterConstructor,
   DataAdapterShape,
 } from './lib';

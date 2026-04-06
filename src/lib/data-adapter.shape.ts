@@ -1,23 +1,16 @@
 // Interface.
-import type { ConfigurableDataShape } from '@typedly/configurable-data';
-import type {
-  DataSettings,
-  // Type.
-  InferAsync
-} from '@typedly/data';
+import type { DataShape } from '@typedly/data';
 /**
  * @description The adapter interface for data types.
  * @export
  * @interface DataAdapterShape
- * @template {DataSettings<R> | undefined} C The type of the configuration object.
  * @template T The type of the data value.
- * @template {boolean} [R=InferAsync<C>] The type of the return values for methods.
- * @extends {ConfigurableDataShape<C, T, R>}
+ * @template {boolean} [R=false] The type of the return values for methods.
+ * @extends {DataShape<T, R>}
  */
 export interface DataAdapterShape<
-  C extends DataSettings<R> | undefined,
   T,
-  R extends boolean = InferAsync<C>
-> extends ConfigurableDataShape<C, T, R> {
+  R extends boolean = false
+> extends DataShape<T, R> {
   version?: string;
 }
