@@ -1,21 +1,16 @@
-import { DataSettings, InferAsync } from "@typedly/data";
-import { AsyncReturn, DataConfig } from "@typedly/data";
-import { DataAdapterShape } from "./data-adapter.shape";
+import { AsyncReturn } from "@typedly/data";
+import { DataAdapterShape } from "../public-api";
 
 export class ExampleDataAdapter<
   T,
-  C extends DataSettings<R> | undefined = undefined,
-  R extends boolean = InferAsync<C>
-> implements DataAdapterShape<C, T, R> {
-  public configuration: DataConfig<C, R>;
+  R extends boolean = false
+> implements DataAdapterShape<T, R> {
 
   constructor(
+    public async = false as R,
     public value: T,
-    public settings?: C,
     public version?: string,
-    public async = this.settings?.async ?? false as R
   ) {
-    this.configuration = (settings ?? {}) as DataConfig<C, R>;
   }
 
   clear(): AsyncReturn<R, this> {
@@ -40,4 +35,4 @@ const adapter: ExampleDataAdapter<Set<string | number>, {
     async: true;
 }, true>
 */
-const adapter = new ExampleDataAdapter(new Set([1, '2']), {async: true}, '1.0.0');
+const adapter = new ExampleDataAdapter(true, new Set([1, '2']), '1.0.0');
