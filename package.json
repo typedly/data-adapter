@@ -9,7 +9,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
-    "@typedly/configurable-data": "^4.2.0",
+    "@typedly/configurable-data": "^4.2.1",
     "@typedly/data": "^6.1.0",
     "@typedly/data-traits": "^2.0.0"
   },
@@ -27,7 +27,17 @@
   },
   "keywords": [
     "@typedly",
-    "@typedly/data-adapter"
+    "@typedly/data",
+    "@typedly/data-adapter",
+    "adapter",
+    "data adapter",
+    "configurable adapter",
+    "traits",
+    "data",
+    "typescript",
+    "type definitions",
+    "data structure",
+    "open source"
   ],
   "funding": [
     {
