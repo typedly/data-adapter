@@ -36,6 +36,8 @@ A **TypeScript** type definitions package for data adapters enabling configurabl
 - [Installation](#installation)
 - [Api](#api)
   - Interface
+    - [`ConfigurableDataAdapterConstructor`](#configurabledataadapterconstructor)
+    - [`ConfigurableDataAdapterShape`](#configurabledataadaptershape)
     - [`DataAdapterConstructor`](#dataadapterconstructor)
     - [`DataAdapterShape`](#dataadaptershape)
 - [Contributing](#contributing)
@@ -81,12 +83,30 @@ npm install @typedly/data-adapter --save-peer
 
 ```typescript
 import {
+  ConfigurableDataAdapterConstructor,
+  ConfigurableDataAdapterShape,
   DataAdapterConstructor,
   DataAdapterShape,
 } from '@typedly/data-adapter';
 ```
 
 ### Interface
+
+### `ConfigurableDataAdapterConstructor`
+
+```typescript
+import { ConfigurableDataAdapterConstructor } from '@typedly/data-adapter';
+```
+
+[Source](https://github.com/typedly/data-adapter/blob/main/src/lib/configurable.data-adapter.constructor.ts)
+
+### `ConfigurableDataAdapterShape`
+
+```typescript
+import { ConfigurableDataAdapterShape } from '@typedly/data-adapter';
+```
+
+[Source](https://github.com/typedly/data-adapter/blob/main/src/lib/configurable.data-adapter.shape.ts)
 
 ### `DataAdapterConstructor`
 
