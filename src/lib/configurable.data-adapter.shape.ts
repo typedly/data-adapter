@@ -1,10 +1,6 @@
-// Interface.
+// Interface & Type.
 import type { ConfigurableDataShape } from '@typedly/configurable-data';
-import type {
-  DataSettings,
-  // Type.
-  InferAsync
-} from '@typedly/data';
+import type { DataSettings, InferAsync } from '@typedly/data';
 /**
  * @description The adapter interface for data types with configuration.
  * @export
